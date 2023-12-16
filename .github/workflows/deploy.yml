@@ -1,6 +1,6 @@
 name: Deploy Astro to GitHub Pages
 
-    - on:
+    me: Deploy
      # Trigger the workflow every time you push to the `main` branch
       push:
         branches: [ main ]
