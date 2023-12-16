@@ -2,6 +2,7 @@
   "name": "eccentric-event",
   "type": "module",
   "version": "0.0.1",
+  
   "homepage": " https://ctseng07.github.io/ConserveEnergy/",
   "scripts": {
     "dev": "astro dev",
