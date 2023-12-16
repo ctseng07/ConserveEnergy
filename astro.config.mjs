@@ -5,7 +5,7 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://ctseng07.github.io',
-  base: '/ConserveEnergy',
+  site: 'https://ctseng07.github.io/ConserveEnergy',
+  base: '',
   integrations: [tailwind(), react()]
 });
