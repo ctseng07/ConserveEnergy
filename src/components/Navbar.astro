@@ -1,9 +1,27 @@
+---
+import Button from "./Button.astro";
+import { Image } from "astro:assets";
+import { logo } from "../assets/images";
+---
+
 
 <nav class="flex items-center justify-between">
-  <div class="navLinks flex gap-4">
-    <a href="">Services</a>
+  <Image src={logo} alt="Logo" />
+  <div class="flex items-center justify-center gap-20 w-1/2">
+    <a href="/services">Services</a>
     <a href="">Results</a>
     <a href="">About</a>
     <a href="">Contact</a>
   </div>
+
+  <button class="border-2 rounded-lg bg-green text-white py-3 px-8 font-medium text-base font-roboto">Schedule now</button>
+
+
 </nav>
+
+<style>
+  * {
+    border: 1px solid red
+
+  }
+</style>
