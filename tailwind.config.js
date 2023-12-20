@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
        'roboto': ['roboto', 'sans-serif'],
+       'robotoSlab': ['Roboto Slab', "serif"],
       },
       colors: {
         green: "#247B46",

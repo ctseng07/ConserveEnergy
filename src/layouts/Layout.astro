@@ -14,9 +14,45 @@ import Navbar from "../components/Navbar.astro";
 
     <title>{title}</title>
   </head>
-  <body>
+  <body class="max-container">
     <Navbar />
     <slot />
     <footer></footer>
   </body>
 </html>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&family=Roboto+Slab:wght@100&display=swap');
+
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* border: 1px solid red; */
+  }
+
+  :root {
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --button: #247B46;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --info: #17a2b8;
+    --light: #f8f9fa;
+    --dark: #343a40;
+  }
+
+  @layer components {
+    .max-container {
+      max-width: 1192px;
+      margin: 0 auto;
+    }
+  }
+</style>
