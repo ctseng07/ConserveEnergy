@@ -2,23 +2,36 @@
 import Button from "../components/Button.astro";
 import { Image } from "astro:assets";
 import { logo } from "../assets/images";
+import { hamburger } from "../assets/icons";
 ---
 
-<nav class="flex items-center justify-between max-container">
+<nav
+  class="flex items-center justify-between max-lg:flex mb-10"
+>
   <Image src={logo} alt="Logo" width={203} height={26} />
-  <div
-    class="flex items-center font-roboto justify-center text-base gap-20"
-  >
-    <a href="/services">Services</a>
-    <a href="">Results</a>
-    <a href="">About</a>
-    <a href="">Contact</a>
+    <div class="flex items-center font-roboto justify-center text-base gap-20">
+      <a href="/ConserveEnergy/services">Services</a>
+      <a href="">Results</a>
+      <a href="">About</a>
+      <a href="">Contact</a>
+    </div>
+
+    <Button id="scheduleBtn" theme="button">Schedule Now</Button>
+
+  <div class="hidden max-lg:block">
+    <Image src={hamburger} 
+    alt="Hamburger" width={25} height={25} />
   </div>
-
-<Button id="scheduleBtn" theme="button">Schedule Now</Button> 
-
 </nav>
 
 <script>
-  document.querySelector("#scheduleBtn")?.addEventListener('click', () => alert('this is the schedule btn'));
+  document
+    .querySelector("#scheduleBtn")
+    ?.addEventListener("click", () => alert("this is the schedule btn"));
 </script>
+
+<style>
+  * {
+    border: 1px solid red;
+  }
+</style>

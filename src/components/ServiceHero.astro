@@ -1,0 +1,38 @@
+---
+import Button from "../components/Button.astro";
+import { Image } from "astro:assets";
+import { warehouse } from "../assets/images";
+---
+
+<div class="flex py-10 gap-10 max-lg:flex-col">
+    <div class="font-robotoSlab flex flex-col justify-center gap-5">
+        <h4 class="text-orange text-xl font-semibold">Turnkey solutions</h4>
+
+        <h1 class="text-5xl font-bold">Top notch services</h1>
+
+        <p class="text-lg font-roboto mt-5">
+            Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate libero et velit interdum, ac aliquet odio mattis. Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+        </p>
+
+        <Button 
+        class="w-44 mt-6"
+        id="scheduleBtn" 
+        theme="button">Schedule Now</Button> 
+    </div>
+
+    <Image src={warehouse} alt="Warehouse" />
+</div>
+
+<script>
+    document.querySelector("#scheduleBtn")?.addEventListener('click', () => alert('this is the schedule btn'));
+  </script>
+
+
+<style>
+    * {
+        border: 1px solid red;
+    }
+</style>
