@@ -5,3 +5,7 @@ export const navLinks = [
     { href: "#about", label: "About" },
     { href: "#contact", label: "Contact" },
 ];
+
+if (module.hot) {
+    module.hot.accept();
+}

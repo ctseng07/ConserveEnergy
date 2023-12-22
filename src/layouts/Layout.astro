@@ -1,6 +1,7 @@
 ---
 const { title } = Astro.props;
 import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
@@ -14,15 +15,17 @@ import Navbar from "../components/Navbar.astro";
 
     <title>{title}</title>
   </head>
-  <body class="max-container">
+  <body class="">
     <Navbar />
     <slot />
-    <footer></footer>
+    <Footer />
   </body>
-</html>
+  </html>
 
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+<style is:global>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
   @tailwind base;
   @tailwind components;
@@ -37,16 +40,59 @@ import Navbar from "../components/Navbar.astro";
     scroll-behavior: smooth;
     /* border: 1px solid red; */
   }
-
+  
   :root {
     --primary: #007bff;
     --secondary: #6c757d;
     --button: #247B46;
-    --orange: #E06127;
-    --title: #111211;
-    --body: #3A3A3A;
-    --light: #f8f9fa;
-    --dark: #343a40;
+    --caption-color: #E06127;
+    --title-color: #111211;
+    --body-color: #3A3A3A;
+    --bone-white: #f9f6ee;
+    --gray: #9c9c9c;
+    --white: #FFFFFF;
+  }
+
+  h1 {
+    font-family: "robotoSlab", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 72.8px;
+    color: var(--title-color);
+  }
+  h2 {
+    font-family: "robotoSlab";
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+    color: var(--title-color);
+  }
+  h3 {
+    font-family: "robotoSlab", serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    color: var(--title-color);
+  }
+  h4 {
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  p {
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--body-color);
+  }
+  .caption {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    font-family: "robotoSlab";
+    color: var(--caption-color);
   }
 
   @layer components {

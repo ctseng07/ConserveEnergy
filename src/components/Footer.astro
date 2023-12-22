@@ -1,0 +1,37 @@
+---
+import { Image } from "astro:assets";
+import { logo2 } from "../assets/images";
+import { phone, mail } from "../assets/icons";
+---
+
+<footer class="bg-title-color min-w-full mt-20 py-12">
+    <div class="max-container flex justify-between ">
+        <a href="/ConserveEnergy">
+            <Image src={logo2} alt="Logo2" width={203} height={26} />
+        </a>
+
+        <div class="flex justify-between flex-col gap-12">
+            <p class="flex items-center justify-center gap-10 text-bone">
+                <a href="/ConserveEnergy/services">Services</a>
+                <a href="">Results</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </p>
+            <p class="text-gray text-center">©Copyright. All rights reserved.ConserveEnergy2023</p>
+        </div>
+
+        <div class="flex-col flex gap-4">
+            <div class="flex gap-3">
+                <Image src={phone} alt="phone-icon" width={24}
+                height={24}/>
+                <p class="text-white">(800)757-3469</p>
+            </div>
+            <div class="flex gap-3">
+                <Image src={mail} alt="mail-icon" 
+                width={24}
+                height={24} />
+                <p class="text-white">info@ezmetro.com</p>
+            </div>
+        </div>
+    </div>
+</footer>

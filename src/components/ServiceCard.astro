@@ -1,82 +1,108 @@
 ---
 import { Image } from "astro:assets";
-import { service1, service2, service3, service4, service5 } from "../assets/images";
+import {
+    service1,
+    service2,
+    service3,
+    service4,
+    service5,
+} from "../assets/images";
 ---
 
-<h2
-    class="font-robotoSlab capitalize text-4xl text-title text-center font-normal mt-10"
->
-    our services
-</h2>
+<div class="max-container">
+    <h2 class="capitalize text-center my-10">our services</h2>
 
-<div class="flex py-10">
-    <div class="flex-col px-12 shadow-2xl py-10 rounded-l-lg">
-        <h3 class="text-3xl py-5 uppercase font-semibold">The energy audit</h3>
+    <div class="flex shadow-2xl rounded-lg">
+        <div class="flex-col px-12 py-10">
+            <h3 class="py-5 uppercase">The energy audit</h3>
 
-        <p class="text-body text-base pt-5">
-            Following a detailed process, Conserve Energy reps bring their audit
-            skills to bear. They develop an accurate understanding of your
-            current systems. This serves as the foundation for an effective
-            retrofit, expansion or remodel.
-        </p>
+            <p class="pt-5">
+                Following a detailed process, Conserve Energy reps bring their
+                audit skills to bear. They develop an accurate understanding of
+                your current systems. This serves as the foundation for an
+                effective retrofit, expansion or remodel.
+            </p>
+        </div>
+
+        <Image src={service1} alt="Service-1" />
     </div>
 
-    <Image src={service1} alt="Service-1" />
-</div>
+    <div class="flex shadow-2xl rounded-lg mt-20">
+        <Image src={service2} alt="Service-2" />
 
-<div class="flex py-10">
-    <Image src={service2} alt="Service-2" />
+        <div class="flex-col px-12 py-10">
+            <h3 class="py-5 uppercase">Design solutions</h3>
 
-    <div class="flex-col px-12 shadow-2xl py-10 rounded-r-lg">
-        <h3 class="text-3xl py-5 uppercase font-semibold">Design solutions</h3>
+            <p class="pt-5">
+                Following a detailed process, Conserve Energy reps bring their
+                audit skills to bear. They develop an accurate understanding of
+                your current systems. This serves as the foundation for an
+                effective retrofit, expansion or remodel.
+            </p>
 
-        <p class="text-body text-base pt-5">
-            Following a detailed process, Conserve Energy reps bring their audit
-            skills to bear. They develop an accurate understanding of your
-            current systems. This serves as the foundation for an effective
-            retrofit, expansion or remodel.
-        </p>
-
-        <button class="text-base text-green font-roboto mt-5 flex item-center">See our results →</button>
-    </div>
-</div>
-
-<div class="flex py-10">
-    <div class="flex-col px-12 shadow-2xl py-10 rounded-r-lg">
-        <h3 class="text-3xl py-5 uppercase font-semibold">led lights and more</h3>
-        
-        <p class="text-body text-base pt-5">
-            No longer a niche product, LED lighting stands alone as the top dog in energy saving lighting options. With hundreds of LED retrofits under our collective belts (including highly specialized projects), consider the Conserve Energy team your energy-efficient LED expert. We offer everything from lighting design services for customized solutions to standard retrofits and LED re-lamping.
-        </p>
-        
-        <button class="text-base text-green font-roboto mt-5 flex item-center">More LED info →</button>
+            <button
+                class="text-base text-green font-roboto mt-5 flex item-center"
+                >See our results →</button
+            >
+        </div>
     </div>
 
-    <Image src={service3} alt="Service-3" />
-</div>
+    <div class="flex shadow-2xl rounded-lg mt-20">
+        <div class="flex-col px-12 py-10">
+            <h3 class="py-5 uppercase">led lights and more</h3>
 
-<div class="flex py-10">
-    <Image src={service4} alt="Service-4" />
+            <p class="pt-5">
+                No longer a niche product, LED lighting stands alone as the top
+                dog in energy saving lighting options. With hundreds of LED
+                retrofits under our collective belts (including highly
+                specialized projects), consider the Conserve Energy team your
+                energy-efficient LED expert. We offer everything from lighting
+                design services for customized solutions to standard retrofits
+                and LED re-lamping.
+            </p>
 
-    <div class="flex-col px-12 shadow-2xl py-10 rounded-r-lg">
-        <h3 class="text-3xl py-5 uppercase font-semibold">installation excellence</h3>
+            <button
+                class="text-base text-green font-roboto mt-5 flex item-center"
+                >More LED info →</button
+            >
+        </div>
 
-        <p class="text-body text-base pt-5">
-            How do we insure a successful install? Simple. Our rigorous installation process ensures your project will be a success. We are there every step of the way, so problems are not. We assign a Conserve Energy Project Coordinator to each job and choose only licensed electrical contractors and other skilled firms that have what it takes to complete your installation properly.
-        </p>
+        <Image src={service3} alt="Service-3" />
     </div>
-</div>
 
-<div class="flex py-10">
-    <div class="flex-col px-12 shadow-2xl py-10 rounded-r-lg">
-        <h3 class="text-3xl py-5 uppercase font-semibold">maximum utility incentives</h3>
-        
-        <p class="text-body text-base pt-5">
-            No rookie in this venture, Conserve Energy has worked with all of the major utility programs in the Northwest. We’re adept at securing the maximum incentives available. We do the paperwork, handle the headaches, and negotiate to secure the energy incentives, which generally range from 20-70% of the project cost.
-        </p>
+    <div class="flex shadow-2xl rounded-lg mt-20">
+        <Image src={service4} alt="Service-4" />
+
+        <div class="flex-col px-12 py-10">
+            <h3 class="py-5 uppercase">installation excellence</h3>
+
+            <p class="pt-5">
+                How do we insure a successful install? Simple. Our rigorous
+                installation process ensures your project will be a success. We
+                are there every step of the way, so problems are not. We assign
+                a Conserve Energy Project Coordinator to each job and choose
+                only licensed electrical contractors and other skilled firms
+                that have what it takes to complete your installation properly.
+            </p>
+        </div>
     </div>
 
-    <Image src={service5} alt="Service-5" />
+    <div class="flex shadow-2xl rounded-lg mt-20">
+        <div class="flex-col px-12 py-10">
+            <h3 class="py-5 uppercase">maximum utility incentives</h3>
+
+            <p class="pt-5">
+                No rookie in this venture, Conserve Energy has worked with all
+                of the major utility programs in the Northwest. We’re adept at
+                securing the maximum incentives available. We do the paperwork,
+                handle the headaches, and negotiate to secure the energy
+                incentives, which generally range from 20-70% of the project
+                cost.
+            </p>
+        </div>
+
+        <Image src={service5} alt="Service-5" />
+    </div>
 </div>
 
 <style>

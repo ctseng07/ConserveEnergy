@@ -16,11 +16,12 @@ interface Props extends HTMLAttributes<"button"> {
     | "primary" 
     | "secondary"
     | "button"
-    | "orange"
-    | "warning"
-    | "info"
-    | "light"
-    | "dark";
+    | "caption-color"
+    | "title-color"
+    | "body-color"
+    | "bone-white"
+    | "gray"
+    | "white";
     classes?: string;
 }
 
@@ -34,7 +35,7 @@ const {
 } = Astro.props;
 
 const background = `var(--${theme})`;
-const foreground = theme === "light" ? "var(---primary)" : "var(---light)";
+const foreground = theme === "bone-white" ? "var(---primary)" : "var(---bone-white)";
 ---
 
 <button 
@@ -64,13 +65,13 @@ define:vars={{
         /* default styles */
         display: flex;
         gap: 0.2rem;
-        max-width: 164px;
         background-color: var(--button);
-        color: var(--light);
+        color: var(--white);
         border: 0.2em solid var(--bkg);
         border-radius: .5rem;
         padding: 0.75rem 2em;
         font-family: "roboto";
+        font-weight: 500;
         transition: box-shadow .2s cubic-bezier(0.075, 0.82, 0.165, 1), opacity .2s cubic-bezier(0.075, 0.82, 0.165, 1), scale .2s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 

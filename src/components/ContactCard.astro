@@ -1,0 +1,31 @@
+---
+import Button from "./Button.astro";
+import { Image } from "astro:assets";
+import { iphone } from "../assets/images";
+---
+
+
+<div class="flex py-20 px-20 gap-10 max-lg:flex-col mt-24 bg-bone rounded-2xl shadow-2xl max-container">
+    <div class="flex flex-col justify-center gap-5">
+        <div class="caption uppercase">For a free consultation</div>
+
+        <h2 class="uppercase">looking at the bigger picture</h2>
+
+        <p class="mt-5">
+            By looking at your big picture, we find the cost-effective pathway to making the energy saving measures reality. Conserve Energy focuses solely on your energy needs, and how to trim your energy use. We provide the in-house expertise to be your turnkey solution for total energy efficiency.
+        </p>
+
+        <p class="mt-5">
+            Our experienced network of suppliers and subcontractors lets us specify and deliver the very best to you. Expect cutting-edge products at competitive prices when you work with Conserve Energy.
+        </p>
+
+        <a href="/ConserveEnergy">
+            <Button
+            class="mt-10"
+            id="scheduleBtn"
+            theme="button">Schedule Now</Button>
+        </a>
+    </div>
+
+    <Image src={iphone} alt="iphone-15" />
+</div>

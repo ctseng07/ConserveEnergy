@@ -7,14 +7,17 @@ module.exports = {
         'card': 'rgba(0, 4, 28, 0)',
       },
       fontFamily: {
-        'roboto': ['roboto', 'sans-serif'],
+        'roboto': ['Roboto', 'sans-serif'],
         'robotoSlab': ['Roboto Slab', "serif"],
       },
       colors: {
         green: "#247B46",
-        orange: "#E06127",
-        title: "#111211",
-        body: "#3A3A3A",
+        "caption-color": "#E06127",
+        "title-color": "#111211",
+        "body-color": "#3A3A3A",
+        bone: "#F9F6EE",
+        gray: "#9c9c9c",
+        white: "#FFFFFF",
       },
     },
     fontWeight: {
