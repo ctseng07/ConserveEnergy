@@ -1,0 +1,46 @@
+---
+import Button from "./Button.astro";
+import { Image } from "astro:assets";
+import { contact } from "../assets/images";
+
+---
+
+<div class="flex-col max-container">
+    <div class="flex-col text-center">
+        <h1 class="">We're here to help</h1>
+
+        <p class="">Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+    </div>
+
+        <div class="flex py-10 gap-10 max-lg:flex-col max-container max-xl:px-5">
+            <Image src={contact} alt="contactImg" 
+            class="max-lg:w-full"/>
+
+            <div class="flex-col">
+
+                <div class="caption">Contact</div>
+        
+                <h2 class="">Feel free to contact us anytime</h2>
+        
+                <p class="">
+                    Fill in the information below and we will contact you. Let's see if we will start a new project. Don't hesitate to contact us.
+                </p>
+
+                
+        
+                <a href="/ConserveEnergy">
+                    <Button
+                    class="mt-5 w-full flex justify-center"
+                    id="scheduleBtn"
+                    theme="button">Submit</Button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    * {
+        border: 1px solid red;
+    }
+</style>
