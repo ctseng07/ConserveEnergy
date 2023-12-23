@@ -1,10 +1,10 @@
 ---
-import Button from "../components/Button.astro";
+import Button from "./Button.astro";
 import { Image } from "astro:assets";
 import { warehouse } from "../assets/images";
 ---
 
-<div class="flex py-10 gap-10 max-lg:flex-col max-container">
+<div class="flex py-10 gap-10 max-lg:flex-col max-container max-lg:px-5">
     <div class="flex flex-col justify-center gap-5">
         <div class="caption">Turnkey solutions</div>
 
@@ -25,7 +25,7 @@ import { warehouse } from "../assets/images";
         </a>
     </div>
 
-    <Image src={warehouse} alt="Warehouse" />
+    <Image src={warehouse} alt="Warehouse" class="max-lg:w-full"/>
 </div>
 
 <script>
@@ -34,7 +34,7 @@ import { warehouse } from "../assets/images";
 
 
 <style>
-    /* * {
+    * {
         border: 1px solid red;
-    } */
+    }
 </style>

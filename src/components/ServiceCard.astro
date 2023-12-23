@@ -9,10 +9,10 @@ import {
 } from "../assets/images";
 ---
 
-<div class="max-container">
+<div class="max-container max-lg:mx-5">
     <h2 class="capitalize text-center my-10">our services</h2>
 
-    <div class="flex shadow-2xl rounded-lg">
+    <div class="flex shadow-2xl rounded-lg max-lg:flex-col">
         <div class="flex-col px-12 py-10">
             <h3 class="py-5 uppercase">The energy audit</h3>
 
@@ -24,11 +24,12 @@ import {
             </p>
         </div>
 
-        <Image src={service1} alt="Service-1" />
+        <Image src={service1} alt="Service-1" class="max-lg:w-full"/>
     </div>
 
-    <div class="flex shadow-2xl rounded-lg mt-20">
-        <Image src={service2} alt="Service-2" />
+    <div class="flex shadow-2xl rounded-lg mt-20 max-lg:flex-col-reverse">
+        <Image src={service2} alt="Service-2"
+        class="max-lg:w-full" />
 
         <div class="flex-col px-12 py-10">
             <h3 class="py-5 uppercase">Design solutions</h3>
@@ -47,7 +48,7 @@ import {
         </div>
     </div>
 
-    <div class="flex shadow-2xl rounded-lg mt-20">
+    <div class="flex shadow-2xl rounded-lg mt-20 max-lg:flex-col">
         <div class="flex-col px-12 py-10">
             <h3 class="py-5 uppercase">led lights and more</h3>
 
@@ -67,11 +68,13 @@ import {
             >
         </div>
 
-        <Image src={service3} alt="Service-3" />
+        <Image src={service3} alt="Service-3"
+        class="max-lg:w-full" />
     </div>
 
-    <div class="flex shadow-2xl rounded-lg mt-20">
-        <Image src={service4} alt="Service-4" />
+    <div class="flex shadow-2xl rounded-lg mt-20 max-lg:flex-col-reverse">
+        <Image src={service4} alt="Service-4" 
+        class="max-lg:w-full"/>
 
         <div class="flex-col px-12 py-10">
             <h3 class="py-5 uppercase">installation excellence</h3>
@@ -87,7 +90,7 @@ import {
         </div>
     </div>
 
-    <div class="flex shadow-2xl rounded-lg mt-20">
+    <div class="flex shadow-2xl rounded-lg mt-20 max-lg:flex-col">
         <div class="flex-col px-12 py-10">
             <h3 class="py-5 uppercase">maximum utility incentives</h3>
 
@@ -101,7 +104,7 @@ import {
             </p>
         </div>
 
-        <Image src={service5} alt="Service-5" />
+        <Image src={service5} alt="Service-5" class="max-lg:w-full"/>
     </div>
 </div>
 
