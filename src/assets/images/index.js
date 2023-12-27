@@ -2,6 +2,7 @@ import logo from "./CE-Logo.svg";
 import logo2 from "./CE-Logo 2.svg";
 
 import contact from "./contact.png";
+import map from "./map.png";
 
 import warehouse from "./warehouse.png";
 
@@ -18,6 +19,7 @@ export {
     logo,
     logo2,
     contact,
+    map,
     warehouse,
     service1,
     service2,
