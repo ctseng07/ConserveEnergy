@@ -1,0 +1,80 @@
+---
+import { Image } from "astro:assets";
+
+import { rightBlack, rightOrange } from "../assets/icons";
+
+import {
+    categories1,
+    categories2,
+    categories3,
+    categories4,
+    categories5,
+    industry1,
+    industry2,
+    industry3,
+    industry4,
+    store1,
+    store2,
+    store3,
+    store4,
+    convenience1,
+    convenience2,
+    convenience3,
+    convenience4,
+    contact,
+} from "../assets/images";
+---
+
+<div class="max-container">
+    <h2 class="capitalize text-center my-10">categories</h2>
+
+    <div class="flex rounded-b-lg">
+        <div class="flex-col shadow-2xl rounded-lg">
+            <Image
+                src={categories1}
+                width={376}
+                height={496} 
+                class="w-full"
+                alt="industrial-buildings"
+            />
+            <div class="flex justify-between px-10 pb-10">
+                <h3 class="text-caption-color text-lg">Industrial Buildings</h3>
+                <Image src={rightOrange} alt="right-orange" />
+            </div>
+        </div>
+        
+        <div class="flex-col shadow-2xl rounded-b-lg">
+            <Image
+                src={categories2}
+                class="w-full"
+                alt="grocery-store"
+            />
+            <div class="flex justify-between p-10">
+                <h3 class="text-title-color text-lg">Grocery Stores</h3>
+                <Image src={rightBlack} alt="right-orange" />
+            </div>
+
+            <Image
+                src={categories4}
+                class="w-full"
+                alt="warehouse-logo"
+            />
+            <div class="flex justify-between p-10">
+                <h3 class="text-title-color text-lg">Lorem Ipsum</h3>
+                <Image src={rightBlack} alt="right-orange" />
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-col">
+        <h2 class="uppercase text-center my-10">industrial buildings</h2>
+
+        <Image src={industry1} class="w-full" alt="industrial hero" />
+    </div>
+</div>
+
+<style>
+    * {
+        border: 1px solid red;
+    }
+</style>

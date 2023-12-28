@@ -17,6 +17,7 @@ import convenience2 from "./categories2.png";
 import convenience3 from "./categories3.png";
 import convenience4 from "./categories4.png";
 
+import industry1 from "./industry1.png";
 import industry2 from "./industry2.png";
 import industry3 from "./industry3.png";
 import industry4 from "./industry4.png";
@@ -26,6 +27,11 @@ import service2 from "./service-2.png";
 import service3 from "./service-3.png";
 import service4 from "./service-4.png";
 import service5 from "./service-5.png";
+
+import store1 from "./store1.png";
+import store2 from "./store2.png";
+import store3 from "./store3.png";
+import store4 from "./store4.png";
 
 import resultHero from "./resultHero.png";
 
@@ -47,6 +53,7 @@ export {
     convenience2,
     convenience3,
     convenience4,
+    industry1,
     industry2,
     industry3,
     industry4,
@@ -55,6 +62,10 @@ export {
     service3,
     service4,
     service5,
+    store1,
+    store2,
+    store3,
+    store4,
     resultHero,
     iphone,
 }
