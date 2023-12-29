@@ -5,18 +5,6 @@ import { contact, map } from "../assets/images";
 
 import { services } from '../constants';
 
-if (Astro.request.method === "POST") {
-    try {
-        const data = await Astro.request.formData();
-        const name = data.get("username");
-        const email = data.get("email");
-        const phone = data.get("phone");
-    } catch (error) {
-        if (error instanceof Error) {
-            console.error(error.message);
-        }
-    }
-}
 ---
 <div class="flex-col max-container">
 
@@ -66,7 +54,7 @@ if (Astro.request.method === "POST") {
                     </label>
                     <label>
                         <input
-                            type="number"
+                            type="tel"
                             name="phone"
                             placeholder="Phone"
                             class="border border-color: text-title-color py-3 pl-4 pr-8 rounded-lg w-full mb-8"
