@@ -12,10 +12,10 @@ import categories3 from "./categories3.png";
 import categories4 from "./categories4.png";
 import categories5 from "./categories5.png";
 
-import convenience1 from "./categories1.png";
-import convenience2 from "./categories2.png";
-import convenience3 from "./categories3.png";
-import convenience4 from "./categories4.png";
+import convenience1 from "./convenience1.png";
+import convenience2 from "./convenience2.png";
+import convenience3 from "./convenience3.png";
+import convenience4 from "./convenience4.png";
 
 import industry1 from "./industry1.png";
 import industry2 from "./industry2.png";
