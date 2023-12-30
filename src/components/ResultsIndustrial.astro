@@ -1,0 +1,131 @@
+---
+import { Image } from "astro:assets";
+
+import {
+    categories4,
+    industry1,
+    industry2,
+    industry3,
+    industry4,
+    store1,
+    store2,
+    store3,
+    store4,
+    convenience1,
+    convenience2,
+    convenience3,
+    convenience4,
+    contact,
+} from "../assets/images";
+---
+
+<div class="max-container mt-20 max-xl:p-10 max-xl:mt-0 max-sm:pt-0">
+    <h2 class="uppercase text-center my-16 max-md:text-3xl max-sm:text-xl">
+        industrial buildings
+    </h2>
+
+    <div class="flex-col gap-20 flex">
+        <div class="flex flex-col gap-10">
+            <Image
+                src={industry1}
+                class="w-full"
+                alt="industrial hero"
+                class="max-lg:hidden"
+            />
+
+            <div class="flex gap-5 max-xl:flex-col">
+                <Image
+                    src={categories4}
+                    class="w-full hidden max-lg:block max-sm:h-auto"
+                    alt="warehouse-logo"
+                />
+
+                <Image src={industry2} class="w-full" alt="industrial hero" />
+
+                <Image src={industry3} class="w-full" alt="industrial hero" />
+
+                <Image src={industry4} class="w-full" alt="industrial hero" />
+            </div>
+        </div>
+
+        <div
+            class="flex justify-between max-xl:flex-col w-full max-xl:gap-5 gap-14"
+        >
+            <div
+                class="flex w-full justify-between gap-5 max-xl:justify-center"
+            >
+                <div
+                    class="p-6 gap-3 flex-col flex justify-center h-36 w-64 text-center shadow-3xl rounded-xl max-xl:w-full"
+                >
+                    <h4 class="text-title-color">$75,000</h4>
+                    <p class="text-center">Initial cost</p>
+                </div>
+
+                <div
+                    class="p-6 gap-3 flex-col flex justify-center h-36 w-64 text-center shadow-3xl rounded-xl max-xl:w-full"
+                >
+                    <h4 class="text-title-color">$37,000</h4>
+                    <p class="text-center">Incentive</p>
+                </div>
+            </div>
+
+            <div
+                class="flex max-sm:flex-col w-full justify-between gap-5 max-xl:justify-center"
+            >
+                <div
+                    class="p-6 gap-3 flex-col flex justify-center h-36 w-64 text-center shadow-3xl rounded-xl max-xl:w-full"
+                >
+                    <h4 class="text-title-color">$20,000</h4>
+                    <p class="text-center">Annual energy savings</p>
+                    <p class="text-center">(Assume 285,000 kWh)</p>
+                </div>
+
+                <div
+                    class="p-6 gap-3 flex-col flex justify-center h-36 w-64 text-center shadow-3xl rounded-xl max-xl:w-full"
+                >
+                    <h4 class="text-title-color">53%</h4>
+                    <p class="text-center">Expected RDI</p>
+                    <p class="text-center">(1.9 Year payback)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-between max-lg:flex-col max-lg:gap-10">
+            <div class="flex-col flex gap-10 w-1/2 max-lg:w-full">
+                <h3>
+                    Typical results for an LED lighting retrofit with controls
+                </h3>
+                <p>
+                    High Bay overhead lighting in manufacturing and warehouse
+                    spaces and large open offices with overhead and task
+                    lighting are common in this type of building and can consume
+                    a lot of watts.
+                </p>
+
+                <p>
+                    Varying occupancy rates and windows or skylights are common
+                    and often provide opportunities for savings from occupancy
+                    sensors and daylight harvesting.
+                </p>
+            </div>
+
+            <div class="flex-col flex gap-10">
+                <h3>Retrofits include:</h3>
+                <p>New High-bay LED lighting fixtures</p>
+
+                <p>
+                    Retrofit or replacement of older T12 or T8 fluorescent
+                    fixtures
+                </p>
+                <p>Occupancy/vacancy sensors</p>
+                <p>Daylight harvesting controls</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* * {
+        border: 1px solid red;
+    } */
+</style>

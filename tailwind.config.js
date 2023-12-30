@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        'card': 'rgba(0, 4, 28, 0)',
+        '3xl': '0 35px 60px 5px rgba(0, 0, 0, 0.3)',
       },
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'],

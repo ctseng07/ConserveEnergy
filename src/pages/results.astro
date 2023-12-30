@@ -1,15 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import ResultsPage from "../components/ResultsPage.astro";
+import ResultsHero from "../components/ResultsHero.astro";
+import ResultsCategory from "../components/ResultsCategory.astro";
+import ResultsIndustrial from "../components/ResultsIndustrial.astro"
+import ResultsStore from "../components/ResultsStore.astro"
+import ResultsConvenience from "../components/ResultsConvenience.astro"
 import ContactCard from "../components/ContactCard.astro";
-import Resultshero from "../components/ResultsHero.astro";
 ---
 
 <Layout title="Conserve Energy |">
   <main>
-    <Resultshero />
+    <ResultsHero />
     <section>
-      <ResultsPage />
+      <ResultsCategory />
+      <ResultsIndustrial />
+      <ResultsStore />
+      <ResultsConvenience />
       <ContactCard />
     </section>
   </main>
