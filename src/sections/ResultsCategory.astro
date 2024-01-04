@@ -17,12 +17,10 @@ import {
     <h2 class="capitalize text-center my-10">categories</h2>
 
     <div class="flex rounded-b-lg gap-5 categories">
-        <div class="flex-col relative shadow-2xl rounded-lg">
+        <div class="flex-col relative shadow-2xl cursor-pointer rounded-lg hover:scale-110">
             <Image
                 src={categories1}
-                width={376}
-                height={496}
-                class="w-full max-lg:hidden"
+                class="w-full max-lg:hidden h-full"
                 alt="industrial-buildings"
             />
 
@@ -31,66 +29,73 @@ import {
                 class="w-full max-lg:block hidden"
                 alt="industrial-buildings"
             />
-            
-            <div class="flex absolute px-10 bottom-3 justify-between w-full max-lg:bg-white max-lg:opacity-70 max-lg:py-5">
-                <h3 class="text-caption-color text-lg max-lg:text-title-color">Industrial Buildings</h3>
-                <Image src={rightOrange} 
-                class="max-lg:hidden" alt="" />
 
-                <Image src={rightBlack} 
-                class="max-lg:block hidden" alt="" />
+            <div
+                class="flex absolute px-10 bottom-3 justify-between w-full max-lg:bg-white max-lg:opacity-70 max-lg:py-5"
+            >
+                <h3 class="text-caption-color text-lg max-lg:text-title-color">
+                    Industrial Buildings
+                </h3>
+                <Image src={rightOrange} class="max-lg:hidden" alt="" />
+
+                <Image src={rightBlack} class="max-lg:block hidden" alt="" />
             </div>
         </div>
 
         <div class="flex-col flex justify-between max-lg:gap-10">
-
-            <div class="relative shadow-2xl rounded-b-lg">
+            <div class="relative shadow-2xl rounded-b-lg cursor-pointer hover:scale-110">
                 <Image src={categories2} class="w-full" alt="warehouse-logo" />
-                    <div
-                        class="absolute rounded-b-lg bottom-0 w-full flex justify-between px-10 py-5 bg-white bg-opacity-90"
-                    >
-                        <h3 class="text-title-color text-lg">Grocery Stores</h3>
-                        <Image src={rightBlack} alt="" />
+                <div
+                    class="absolute rounded-b-lg bottom-0 w-full flex justify-between px-10 py-3.5 bg-white bg-opacity-90"
+                >
+                    <h3 class="text-title-color text-lg">Grocery Stores</h3>
+                    <Image src={rightBlack} alt="" />
                 </div>
             </div>
 
-            <div class="relative">
+            <div class="relative shadow-2xl rounded-b-lg cursor-pointer hover:scale-110">
                 <Image src={categories4} class="w-full" alt="warehouse-logo" />
-                    <div
-                        class="absolute rounded-b-lg bottom-0 left-0 w-full flex justify-between px-10 py-5 bg-white bg-opacity-90"
-                    >
-                        <h3 class="text-title-color text-lg">Lorem Ipsum</h3>
-                        <Image src={rightBlack} alt="" />
+                <div
+                    class="absolute rounded-b-lg bottom-0 left-0 w-full flex justify-between px-10 py-3.5 bg-white bg-opacity-90"
+                >
+                    <h3 class="text-title-color text-lg">Lorem Ipsum</h3>
+                    <Image src={rightBlack} alt="" />
                 </div>
             </div>
         </div>
 
         <div class="flex-col flex justify-between max-lg:gap-10">
-
-            <div class="relative shadow-2xl rounded-b-lg">
+            <div class="relative shadow-2xl rounded-b-lg cursor-pointer hover:scale-110">
                 <Image src={categories3} class="w-full" alt="convenience" />
-                    <div
-                        class="absolute rounded-b-lg bottom-0 w-full flex justify-between px-10 py-5 bg-white bg-opacity-90"
-                    >
-                        <h3 class="text-title-color text-lg">Convenience Stores</h3>
-                        <Image src={rightBlack} alt="" />
+                <div
+                    class="absolute rounded-b-lg bottom-0 w-full flex justify-between px-10 py-3.5 bg-white bg-opacity-90"
+                >
+                    <h3 class="text-title-color text-lg">Convenience Stores</h3>
+                    <Image src={rightBlack} alt="" />
                 </div>
             </div>
 
-            <div class="relative">
+            <div
+                class="relative shadow-2xl rounded-b-lg cursor-pointer hover:text-[var(--caption-color)] hover:scale-110"
+            >
                 <Image src={categories5} class="w-full" alt="results" />
-                    <div
-                        class="absolute rounded-b-lg bottom-0 left-0 w-full flex justify-between px-10 py-5 bg-white bg-opacity-90"
-                    >
-                        <h3 class="text-title-color text-lg">Lorem Ipsum</h3>
-                        <Image src={rightBlack} alt="" />
+                <div
+                    class="absolute rounded-b-lg bottom-0 left-0 w-full flex justify-between px-10 py-3.5 bg-white bg-opacity-90 hover:text-[var(--caption-color)]"
+                >
+                    <h3 class="text-title-color text-lg w-full flex justify-between">
+                        Lorem Ipsum
+
+                        Lorem Ipsum
+                        <!-- <Image src={rightBlack} alt="" class="hover:hidden"/> -->
+                    </h3>
                 </div>
             </div>
         </div>
     </div>
 
-<style>
-    /* * {
-        border: 1px solid red;
-    } */
-</style>
+    <style>
+        /* * {
+            border: 1px solid red;
+        } */
+    </style>
+</div>

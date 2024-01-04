@@ -1,7 +1,10 @@
 ---
-import Button from "./Button.astro";
+import Button from "../components/Button.astro";
 import { Image } from "astro:assets";
 import { warehouse } from "../assets/images";
+
+import index from "../constants/index.json";
+import ServiceInfo from "../components/ServiceInfo.astro";
 ---
 
 <div class="flex py-10 gap-10 max-lg:flex-col max-container max-xl:px-5">
@@ -27,6 +30,21 @@ import { warehouse } from "../assets/images";
 
     <Image src={warehouse} alt="Warehouse" class="max-lg:w-full"/>
 </div>
+
+<!-- <section class="flex-col py-10 gap-10 max-lg:flex-col max-container max-xl:px-5">
+    <p class="caption">Testimonials</p>
+    <h2>What our clients say</h2>
+    <div class="flex flex-col justify-center gap-5">
+      {
+        index.map((card) => (
+            <ServiceInfo
+            label={card.label}
+                subtext={card.subtext}
+              />
+        ))
+      }
+    </div>
+  </section> -->
 
 <script>
     document.querySelector("#scheduleBtn")?.addEventListener('click', () => alert('this is the schedule btn'));

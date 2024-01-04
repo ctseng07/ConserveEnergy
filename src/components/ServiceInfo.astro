@@ -1,0 +1,17 @@
+---
+interface Props {
+    subtext: string;
+    label: string;
+}
+
+const { subtext, label } = Astro.props;
+---
+
+<div class="card">
+    <div class="flex shadow-2xl rounded-lg max-lg:flex-col">
+        <div class="flex-col px-12 py-10 max-lg:px-3">
+            <h3 class="py-5 uppercase">{label}</h3>
+            <p class="pt-5">{subtext}</p>
+        </div>
+    </div>
+</div>
