@@ -1,0 +1,156 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+// import Card from "../components/Card.astro";
+// import CTA from "../components/CTA.astro";
+const heroContent = {
+  caption: "About Us",
+  imagePath: "/src/assets/images/aboutHero.png",
+  title: "Improving your energy efficiency",
+  text: `At Conserve Energy, we're not just consultants; we're your partners in
+    achieving energy efficiency. Discover the team and values that drive us
+    to be pioneers in delivering sustainable solutions for your business.`,
+};
+
+import { Image } from "astro:assets";
+import { aboutHero, about1, about2, about3, about4, about5 } from "../assets/images";
+---
+
+<Layout title="Conserve Energy | About Us">
+  <main>
+    <Hero
+      title={heroContent.title}
+      text={heroContent.text}
+      caption={heroContent.caption}
+      imagePath={heroContent.imagePath}
+      altText="test"
+    >
+      <!-- <Image src={aboutHero} alt="hero image" /> -->
+    </Hero>
+    <section>
+      <div class="card flex rounded-3xl overflow-hidden shadow-2xl mb-12">
+        <div class="text-wrapper flex-1 p-16">
+          <h3 class="w-3/4 mb-6">TURNKEY SOLUTIONS, EXCEPTIONAL PRODUCTS</h3>
+          <p class="body">
+            Conserve Energy turnkey solutions start with audits to determine the
+            energy saving potential, and extends into lighting and control
+            design, top quality energy-efficient products, installation, project
+            management, handling of all utility incentive paperwork, financing,
+            and more.
+          </p>
+        </div>
+        <div id="about1" class="image-wrapper w-5/12">
+          <!-- <img src="../src/images/about1.jpg" alt="placeholder" /> -->
+          <Image src={about1} alt="grocery produce" />
+        </div>
+      </div>
+
+      <div
+        class="flex flex-row-reverse items-stretch rounded-3xl overflow-hidden shadow-2xl mb-12"
+      >
+        <div class="text-wrapper flex-1 p-16">
+          <h3 class="w-3/4 mb-6">YOUR ENERGY EFFICIENCY PARTNER</h3>
+          <p class="body">
+            At Conserve Energy, we stay focused on meeting customer needs.
+            In-house expertise, along with a strong network of suppliers,
+            subcontractors, and financing partners allows us to specify and
+            deliver leading-edge products at competitive prices. This, coupled
+            with an ability to identify and maximize third-party incentives,
+            creates great value for every client.
+          </p>
+
+          <ul class="my-8 list-disc">
+            <li>
+              Looking to strengthen your businesses by reducing energy costs?
+            </li>
+            <li>Want improved lighting for retail product displays?</li>
+            <li>Seeking to enhance worker safety and productivity?</li>
+            <li>Simply want to reduce your carbon footprint?</li>
+          </ul>
+
+          <p class="body">Then Conserve Energy will make a great partner.</p>
+        </div>
+        <div id="about2" class="image-wrapper w-5/12">
+          <Image src={about2} alt="shaking hands" />
+        </div>
+      </div>
+
+      <div class="card flex rounded-3xl overflow-hidden shadow-2xl mb-12">
+        <div class="text-wrapper flex-1 flex flex-col justify-center p-16">
+          <h3 class="w-3/4 mb-6">UTILITY KNOWLEDGE</h3>
+          <p class="body">
+            In addition to our technical and product expertise, Conserve Energy
+            works closely with local utilities and utility program management
+            contractors to assure our customers receive maximum incentive
+            dollars.
+          </p>
+        </div>
+        <div id="about3" class="image-wrapper w-5/12">
+          <Image src={about3} alt="solar panel" />
+        </div>
+      </div>
+
+      <div
+        class="card flex flex-row-reverse rounded-3xl overflow-hidden shadow-2xl mb-12"
+      >
+        <div class="text-wrapper flex-1 p-16">
+          <h3 class="mb-6">
+            LED LIGHTING EXPERTISE SETS CONSERVE ENERGY APART
+          </h3>
+          <p class="body mb-4">
+            Deep knowledge of LED lighting and control solutions for new
+            construction and retrofits help define Conserve Energy.
+          </p>
+          <p class="body mb-4">
+            We have completed a large number of all-LED lighting projects
+            including interior, exterior and specialty products, from canopy
+            down-lights to signs and case lighting.
+          </p>
+
+          <p class="body mb-4">
+            For customers desiring more comprehensive energy management
+            programs, Conserve Energy partners with other experts to improve
+            efficiency of HVAC and refrigeration systems.
+          </p>
+        </div>
+        <div id="about4" class="image-wrapper w-5/12">
+          <Image src={about4} alt="gas station" />
+        </div>
+      </div>
+
+      <div class="card flex rounded-3xl overflow-hidden shadow-2xl mb-12">
+        <div class="text-wrapper flex-1 p-16">
+          <h3 class="w-3/4 mb-6">CONSERVE ENERGY ORIGINS</h3>
+          <p class="body mb-4">
+            Conserve Energy was established with the vision of being a Northwest
+            company that could provide “the complete package” for energy
+            efficiency.
+          </p>
+
+          <p class="body mb-4">
+            Since our start in 2008, we have developed an extensive network of
+            suppliers and partners that help us deliver top-drawer products at
+            reasonable prices.
+          </p>
+          <p class="body mb-4">
+            Working with our partner companies, Conserve Energy has completed
+            over 3,200 lighting and energy efficiency projects in the commercial
+            and industrial sectors.
+          </p>
+        </div>
+        <div id="about5" class="image-wrapper w-5/12">
+          <Image src={about5} alt="lightbulb" />
+        </div>
+      </div>
+    </section>
+    <!-- <CTA /> -->
+  </main>
+</Layout>
+
+<style>
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
+../components/Carousel.js

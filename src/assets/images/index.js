@@ -6,6 +6,13 @@ import map from "./map.png";
 
 import warehouse from "./warehouse.png";
 
+import about1 from './about1.png';
+import about2 from './about2.png';
+import about3 from './about3.png';
+import about4 from './about4.png';
+import about5 from './about5.png';
+import aboutHero from './aboutHero.png';
+
 import categories1 from "./categories1.png";
 import categories2 from "./categories2.png";
 import categories3 from "./categories3.png";
@@ -44,6 +51,12 @@ export {
     contact,
     map,
     warehouse,
+    about1,
+    about2,
+    about3,
+    about4,
+    about5,
+    aboutHero,
     categories1,
     categories2,
     categories3,

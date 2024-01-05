@@ -1,0 +1,46 @@
+---
+import Button from "./Button.astro";
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+
+const { text, title, caption, imagePath, altText, extraClass } = Astro.props;
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+    "/src/assets/images/*.{jpeg,jpg,png,gif}",
+);
+if (!images[imagePath])
+    throw new Error(
+        `"${imagePath}" does not exist in glob: "/src/images/*.{jpeg,jpg,png,gif}"`,
+    );
+---
+
+<section
+    class=`flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 ${extraClass}`
+>
+    <div class="flex-1 px-2 max-container">
+        <div class="flex flex-col gap-2 md:gap-6 mb-4 md:mb-10">
+            <h4 class="caption">{caption}</h4>
+            <h1>{title}</h1>
+            <p class="body md:mr-4">{text}</p>
+        </div>
+        <a href="/ConserveEnergy">
+            <Button class="mt-5" id="scheduleBtn" theme="button">
+                Schedule Now
+            </Button>
+        </a>
+    </div>
+</section>
+<div class="md:flex-1 h-[30rem] md:aspect-square">
+    <div
+        class="hero-image relative w-full h-full md:rounded-3xl md:overflow-hidden"
+    >
+        <!-- <img src={imagePath} alt={altText} /> -->
+        <Image
+            src={images[imagePath]()}
+            alt={altText}
+            class="h-full object-cover"
+        />
+
+        <slot />
+    </div>
+</div>
