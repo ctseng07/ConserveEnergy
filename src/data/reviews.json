@@ -2,13 +2,11 @@
     {
       "name": "John Doe",
       "content": "iquam vel nibh amet, vitae at purus dui semper vel facilisis enim",
-      "avatar": "/assets/avatar-1.jpeg",
-      "active": true
+      "img": "../assets/images/about1.png"
     },
     {
       "name": "Christian Jones",
-      "content": "iquam vel nibh amet, vitae at purus dui semper vel facilisis enim",
-      "avatar": "/assets/avatar-2.jpeg"
+      "content": "iquam vel nibh amet, vitae at purus dui semper vel facilisis enim"
     },
     {
       "name": "Clarence Robinson",
